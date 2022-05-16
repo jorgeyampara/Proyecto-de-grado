@@ -43,7 +43,7 @@ public class LoginActivity extends AppCompatActivity {
         botonCrearCuenta.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(com.jorgeyampara.raices.LoginActivity.this, RegistrarseActivity.class));
+                startActivity(new Intent(com.jorgeyampara.raicesnuevo.LoginActivity.this, RegistrarseActivity.class));
             }
         });
 
@@ -52,7 +52,7 @@ public class LoginActivity extends AppCompatActivity {
         reestablecerContraseña.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(com.jorgeyampara.raices.LoginActivity.this, ResetPassword.class));
+                startActivity(new Intent(com.jorgeyampara.raicesnuevo.LoginActivity.this, ResetPassword.class));
             }
         });
 
@@ -72,18 +72,18 @@ public class LoginActivity extends AppCompatActivity {
                         public void onComplete(@NonNull Task<AuthResult> task) {
 
                             if (task.isSuccessful()){
-                                startActivity(new Intent(com.jorgeyampara.raices.LoginActivity.this, MainActivity.class));
+                                startActivity(new Intent(com.jorgeyampara.raicesnuevo.LoginActivity.this, MainActivity.class));
                                 finish();
                             }
                             else {
-                                Toast.makeText(com.jorgeyampara.raices.LoginActivity.this, "Usuario o contraseña incorrecto",Toast.LENGTH_SHORT).show();
+                                Toast.makeText(com.jorgeyampara.raicesnuevo.LoginActivity.this, "Usuario o contraseña incorrecto",Toast.LENGTH_SHORT).show();
                             }
 
                         }
                     });
                 }
                 else {
-                    Toast.makeText(com.jorgeyampara.raices.LoginActivity.this, "Debe completar todos los campos",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(com.jorgeyampara.raicesnuevo.LoginActivity.this, "Debe completar todos los campos",Toast.LENGTH_SHORT).show();
                 }
             }
         }

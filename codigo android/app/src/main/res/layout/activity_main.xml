@@ -117,6 +117,12 @@
             app:cardElevation="6dp"
 
             >
+            <Button
+                android:id="@+id/luces"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorTransparente"
+                />
 
             <LinearLayout
                 android:layout_width="match_parent"

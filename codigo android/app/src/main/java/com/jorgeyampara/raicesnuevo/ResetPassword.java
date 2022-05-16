@@ -46,7 +46,7 @@ public class ResetPassword extends AppCompatActivity {
                     resetPassword();
                 }
                 else {
-                    Toast.makeText(com.jorgeyampara.raices.ResetPassword.this, "Debe ingresar su Email",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(com.jorgeyampara.raicesnuevo.ResetPassword.this, "Debe ingresar su Email",Toast.LENGTH_SHORT).show();
                 }
 
             }
@@ -59,10 +59,10 @@ public class ResetPassword extends AppCompatActivity {
             public void onComplete(@NonNull Task<Void> task) {
 
                 if (task.isSuccessful()){
-                    Toast.makeText(com.jorgeyampara.raices.ResetPassword.this, "Se envio un correo para restablecer su contraseña",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(com.jorgeyampara.raicesnuevo.ResetPassword.this, "Se envio un correo para restablecer su contraseña",Toast.LENGTH_SHORT).show();
                 }
                 else {
-                    Toast.makeText(com.jorgeyampara.raices.ResetPassword.this, "No se pudo enviar el correo",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(com.jorgeyampara.raicesnuevo.ResetPassword.this, "No se pudo enviar el correo",Toast.LENGTH_SHORT).show();
                 }
                 progressDialog.dismiss();
             }

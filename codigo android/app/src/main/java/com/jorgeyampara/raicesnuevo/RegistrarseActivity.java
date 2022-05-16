@@ -63,16 +63,16 @@ public class RegistrarseActivity extends AppCompatActivity {
                 if (!name.isEmpty() && !email.isEmpty() && !password.isEmpty()){
 
                     if (password.length() >=6){
-                        Toast.makeText(com.jorgeyampara.raices.RegistrarseActivity.this, "Registro exitoso",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(com.jorgeyampara.raicesnuevo.RegistrarseActivity.this, "Registro exitoso",Toast.LENGTH_SHORT).show();
                         registarUsuario();
                     }
                     else {
-                        Toast.makeText(com.jorgeyampara.raices.RegistrarseActivity.this, "La contarseña debe tener al menos 6 caracteres", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(com.jorgeyampara.raicesnuevo.RegistrarseActivity.this, "La contarseña debe tener al menos 6 caracteres", Toast.LENGTH_SHORT).show();
                     }
 
                 }
                 else {
-                    Toast.makeText(com.jorgeyampara.raices.RegistrarseActivity.this, "Debe completar todos los datos",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(com.jorgeyampara.raicesnuevo.RegistrarseActivity.this, "Debe completar todos los datos",Toast.LENGTH_SHORT).show();
                 }
 
             }
@@ -100,18 +100,18 @@ public class RegistrarseActivity extends AppCompatActivity {
                         public void onComplete(@NonNull Task<Void> task2) {
                             if (task2.isSuccessful()){
 
-                                startActivity(new Intent(com.jorgeyampara.raices.RegistrarseActivity.this, com.jorgeyampara.raices.MainActivity.class));
+                                startActivity(new Intent(com.jorgeyampara.raicesnuevo.RegistrarseActivity.this, com.jorgeyampara.raicesnuevo.MainActivity.class));
                                 finish();
                             }
                             else {
-                                Toast.makeText(com.jorgeyampara.raices.RegistrarseActivity.this, "No se pudo registrar ",Toast.LENGTH_SHORT).show();
+                                Toast.makeText(com.jorgeyampara.raicesnuevo.RegistrarseActivity.this, "No se pudo registrar ",Toast.LENGTH_SHORT).show();
                             }
 
                         }
                     });
                 }
                 else {
-                    Toast.makeText(com.jorgeyampara.raices.RegistrarseActivity.this, "No se pudo registrar ",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(com.jorgeyampara.raicesnuevo.RegistrarseActivity.this, "No se pudo registrar ",Toast.LENGTH_SHORT).show();
                 }
             }
         });

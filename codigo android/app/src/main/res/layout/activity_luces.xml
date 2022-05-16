@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".LucesActivity"
+    android:backgroundTint="@color/plomo">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/borderradiuscontainer">
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:columnCount="1"
+                android:rowCount="7">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="LUCES"
+                    android:textSize="40dp"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorNegro"
+                    android:layout_marginTop="15dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/turquesaborder">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Fila: 1"
+                    android:textSize="25dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/colorNegro"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Encender/Apagar"
+                    android:textSize="25dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/colorNegro"
+                    android:textStyle="normal"/>
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="250dp"
+                    android:scaleX="1.5"
+                    android:scaleY="1.5"/>
+
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/turquesaborder">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Fila: 1"
+                        android:textSize="25dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="@color/colorNegro"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Encender/Apagar"
+                        android:textSize="25dp"
+                        android:layout_marginTop="50dp"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="@color/colorNegro"
+                        android:textStyle="normal"/>
+                    <Switch
+                        android:id="@+id/luces2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="250dp"
+                        android:scaleX="1.5"
+                        android:scaleY="1.5"/>
+
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/turquesaborder">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Fila: 1"
+                        android:textSize="25dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="@color/colorNegro"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Encender/Apagar"
+                        android:textSize="25dp"
+                        android:layout_marginTop="50dp"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="@color/colorNegro"
+                        android:textStyle="normal"/>
+                    <Switch
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="250dp"
+                        android:scaleX="1.5"
+                        android:scaleY="1.5"/>
+
+                </RelativeLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Programar hora de riego"
+                    android:textSize="30dp"
+                    android:textAlignment="center"
+                    android:textStyle="normal"
+                    android:textColor="@color/colorNegro"
+                    android:layout_marginTop="15dp"/>
+
+                <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:columnCount="3"
+                android:rowCount="1">
+                <EditText
+                    android:id="@+id/horaencendido"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="30dp"
+                    android:hint="Hora"
+                    android:textSize="11dp"
+                    android:textAlignment="center"
+                    android:layout_marginTop="20dp"
+                    android:inputType="datetime"
+                    android:layout_marginBottom="20dp"
+                    android:padding="20dp"
+                    android:drawablePadding="12dp"
+                    android:background="@drawable/borderradiuscontainer"/>
+                <EditText
+                    android:id="@+id/tiempoencendido"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="30dp"
+                    android:hint="Tiempo"
+                    android:layout_marginTop="15dp"
+                    android:textSize="11dp"
+                    android:textAlignment="center"
+                    android:inputType="time"
+                    android:layout_marginBottom="20dp"
+                    android:padding="20dp"
+
+                    android:drawablePadding="12dp"
+                    android:background="@drawable/borderradiuscontainer"/>
+
+                <EditText
+                    android:id="@+id/filaencendido"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="30dp"
+                    android:hint="fila"
+                    android:textSize="11dp"
+                    android:textAlignment="center"
+                    android:layout_marginTop="20dp"
+                    android:inputType="time"
+                    android:layout_marginBottom="20dp"
+                    android:padding="20dp"
+
+                    android:drawablePadding="12dp"
+                    android:background="@drawable/borderradiuscontainer"/>
+
+
+
+            </GridLayout>
+                <Button
+
+                    android:id="@+id/registrarse"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/botonredondo"
+                    android:text="Aceptar"
+                    />
+
+            </GridLayout>
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
