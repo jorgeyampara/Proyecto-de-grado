@@ -1,0 +1,10 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Raices" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/colorNegro</item>
+        <item name="colorPrimaryDark">@color/colorNegro</item>
+        <item name="colorAccent">@color/colorNegro</item>
+        <!-- Customize your theme here. -->
+    </style>
+</resources>
