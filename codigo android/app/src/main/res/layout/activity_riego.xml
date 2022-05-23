@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".RiegoActivity"
+    android:backgroundTint="@color/plomo">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/borderradiuscontainer">
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:columnCount="1"
+                android:rowCount="7">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="FUNCIONES DE RIEGO"
+                    android:textSize="30dp"
+
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorNegro"
+                    android:layout_marginTop="15dp"/>
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/turquesaborder">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="BOMBA"
+                        android:textSize="25dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="@color/colorNegro"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Encender/Apagar"
+                        android:textSize="25dp"
+                        android:layout_marginTop="50dp"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="@color/colorNegro"
+                        android:textStyle="normal"/>
+                    <Switch
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="250dp"
+                        android:scaleX="1.5"
+                        android:scaleY="1.5"/>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/turquesaborder">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="MEZCLA"
+                        android:textSize="25dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="@color/colorNegro"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Encender/Apagar"
+                        android:textSize="25dp"
+                        android:layout_marginTop="50dp"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="@color/colorNegro"
+                        android:textStyle="normal"/>
+                    <Switch
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="250dp"
+                        android:scaleX="1.5"
+                        android:scaleY="1.5"/>
+
+                </RelativeLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Programar hora de riego"
+                    android:textSize="30dp"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorNegro"
+                    android:layout_marginTop="15dp"/>
+
+                <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:columnCount="3"
+                android:rowCount="1">
+                <EditText
+                    android:id="@+id/horaencendido"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="90dp"
+                    android:hint="Hora"
+                    android:textSize="11dp"
+                    android:textAlignment="center"
+                    android:layout_marginTop="20dp"
+                    android:inputType="datetime"
+                    android:layout_marginBottom="20dp"
+                    android:padding="20dp"
+                    android:drawablePadding="12dp"
+                    android:background="@drawable/borderradiuscontainer"/>
+                <EditText
+                    android:id="@+id/tiempoencendido"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="30dp"
+                    android:hint="Tiempo"
+                    android:layout_marginTop="15dp"
+                    android:textSize="11dp"
+                    android:textAlignment="center"
+                    android:inputType="time"
+                    android:layout_marginBottom="20dp"
+                    android:padding="20dp"
+
+                    android:drawablePadding="12dp"
+                    android:background="@drawable/borderradiuscontainer"/>
+
+
+
+            </GridLayout>
+                <Button
+
+                    android:id="@+id/registrarse"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/botonredondo"
+                    android:text="Aceptar"
+                    />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/borderradiuscontainer">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="NIVEL DE AGUA"
+                        android:textAlignment="center"
+                        android:textSize="25dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="@color/colorNegro"/>
+                    <ProgressBar
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </RelativeLayout>
+
+            </GridLayout>
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

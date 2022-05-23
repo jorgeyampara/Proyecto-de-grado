@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".ContactosActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView2"
+
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="450dp"
+            app:srcCompat="@drawable/logoletras" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+        android:layout_marginTop="240dp">
+
+        <ImageButton
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="200dp"
+            android:background="@drawable/whatsapp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Samuel Cabrera"
+            android:layout_marginTop="220dp"
+            android:layout_marginRight="200dp"
+            android:textColor="@color/colorNegro"
+            android:textAlignment="center"/>
+
+        <ImageButton
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_marginLeft="220dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/whatsapp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mauricio Paniagua"
+            android:layout_marginTop="220dp"
+            android:layout_marginLeft="200dp"
+            android:textColor="@color/colorNegro"
+            android:textAlignment="center"/>
+
+        <ImageButton
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="270dp"
+            android:layout_marginLeft="120dp"
+            android:background="@drawable/facebook"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pagina de Facebook"
+            android:layout_marginTop="440dp"
+            android:textColor="@color/colorNegro"
+            android:textAlignment="center"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
