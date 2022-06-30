@@ -1,0 +1,17 @@
+{
+  "Proyecto1": {
+    "sensor": "DHT11"
+  },
+  "Users": {
+    "jorge": {
+      "email": "jorgeyampara24@gmail.com",
+      "luz1": 0,
+      "luz2": 0,
+      "luz3": 0,
+      "name": "jorge",
+      "paswword": "123456"
+    }
+  },
+  "lectura1": 512,
+  "string1": "On"
+}
