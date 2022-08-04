@@ -14,6 +14,7 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class LoginActivity extends AppCompatActivity {
     private EditText Correo;
@@ -23,6 +24,8 @@ public class LoginActivity extends AppCompatActivity {
     private Button reestablecerContraseña;
     //variables de los datos del usuario
 
+    FirebaseAuth firebaseAuth;
+
     private String name;
     private String email;
     private String password;
@@ -31,6 +34,8 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate (Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+        firebaseAuth = FirebaseAuth.getInstance();
+
 
         Correo = (EditText) findViewById(R.id.correoElectronico);
         Contraseña = (EditText) findViewById(R.id.contraseña);
@@ -70,10 +75,18 @@ public class LoginActivity extends AppCompatActivity {
 
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
+                            String id = firebaseAuth.getCurrentUser().getUid();
 
                             if (task.isSuccessful()){
-                                startActivity(new Intent(com.jorgeyampara.raicesnuevo.LoginActivity.this, MainActivity.class));
-                                finish();
+                                FirebaseUser user = firebaseAuth.getCurrentUser();
+                                if (!user.isEmailVerified()){
+                                    Toast.makeText(com.jorgeyampara.raicesnuevo.LoginActivity.this, "Correo elctronico no verificado",Toast.LENGTH_SHORT).show();
+                                }
+                                else{
+                                    startActivity(new Intent(com.jorgeyampara.raicesnuevo.LoginActivity.this, MainActivity.class));
+                                    finish();
+                                    }
+
                             }
                             else {
                                 Toast.makeText(com.jorgeyampara.raicesnuevo.LoginActivity.this, "Usuario o contraseña incorrecto",Toast.LENGTH_SHORT).show();

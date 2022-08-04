@@ -14,6 +14,7 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -89,9 +90,14 @@ public class RegistrarseActivity extends AppCompatActivity {
                     map.put("name",name);
                     map.put("email", email);
                     map.put("paswword", password);
-                    map.put("temperature",0);
-                    map.put("humity", 0);
+                    map.put("temperatura",0);
                     map.put("pH", 0);
+                    map.put("electroconductividad", 0);
+                    map.put("bomba", 0);
+                    map.put("mezcla", 0);
+                    map.put("luz1", 0);
+                    map.put("luz2", 0);
+                    map.put("luz3", 0);
 
                     String id = firebaseAuth.getCurrentUser().getUid();
 
@@ -100,7 +106,10 @@ public class RegistrarseActivity extends AppCompatActivity {
                         public void onComplete(@NonNull Task<Void> task2) {
                             if (task2.isSuccessful()){
 
-                                startActivity(new Intent(com.jorgeyampara.raicesnuevo.RegistrarseActivity.this, com.jorgeyampara.raicesnuevo.MainActivity.class));
+                                FirebaseUser user = firebaseAuth.getCurrentUser();
+                                user.sendEmailVerification();
+
+                                startActivity(new Intent(com.jorgeyampara.raicesnuevo.RegistrarseActivity.this, com.jorgeyampara.raicesnuevo.LoginActivity.class));
                                 finish();
                             }
                             else {
